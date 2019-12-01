@@ -11,7 +11,7 @@ import locadoraveiculos.Veiculo;
 
 /**
  *
- * @author renan
+ * @author lucas h
  */
 public class Menu extends javax.swing.JFrame {
     
