@@ -12,7 +12,7 @@ import locadoraveiculos.LocadoraDados;
 
 /**
  *
- * @author EC_es
+ * @author lucas h
  */
 public class ListarVeiculos extends javax.swing.JInternalFrame {
 
