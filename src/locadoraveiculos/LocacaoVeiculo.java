@@ -37,7 +37,7 @@ public class LocacaoVeiculo {
         setPossuiSeguro(possuiSeguro);
         
         setValorLocacao();      //Setando o valor da locação
-    }
+     }
 
         public String getStatus() {
             return status;
@@ -59,11 +59,7 @@ public class LocacaoVeiculo {
                 throw new IllegalArgumentException("O valor da diária é inválido");
                 
             }
-            
-		
 	}
-	
-	
 	
 	public double valorLocacao() {
 		
@@ -75,10 +71,8 @@ public class LocacaoVeiculo {
 		return valorLocacao() - valorLocacao() * 0.12;
 	}
 	
-	public void exibirListaVeiculos() {
-		
-		
-		
+	public void exibirListaVeiculos() {// metodo não usado
+	
 	}
         
         public Cliente getCliente(){
@@ -101,7 +95,6 @@ public class LocacaoVeiculo {
                 throw new IllegalArgumentException("Informe um valor válido para o desconto");
                 
             }
-            
         }
 
         public double getValorDiaria() {
@@ -112,8 +105,6 @@ public class LocacaoVeiculo {
             return desconto;
         }
         
-        
-
         public Veiculo getVeiculo() {
             return veiculo;
         }
@@ -133,8 +124,6 @@ public class LocacaoVeiculo {
              }else{
                 this.dataIni = dataIni;
             }
-            
-            
         }
 
         public String getDataFin() {
@@ -167,7 +156,6 @@ public class LocacaoVeiculo {
                 throw new IllegalArgumentException("A quantidade de dias deve ser um número inteiro");
                 
             }
-         
         }
 
         public boolean isDisponibilidade() {
@@ -186,7 +174,6 @@ public class LocacaoVeiculo {
             this.possuiSeguro = possuiSeguro;
         }
         
-        
         public void setValorSeguro() {
 		DecimalFormat df = new DecimalFormat("0.00");
                 df.setRoundingMode(RoundingMode.HALF_UP);
@@ -195,7 +182,6 @@ public class LocacaoVeiculo {
                         
 			 valorSeguro =  (0.05 * valorDiaria * (1.0 + veiculo.getPassageiros()/20.0));
                          
-                        
 		}
                 else if(veiculo.getTipo().equals("MOTO") && (possuiSeguro == true))
 		{       System.out.println("Calculando valor do seguro da moto");
@@ -206,15 +192,12 @@ public class LocacaoVeiculo {
                 }
 	}
         
-        
         public double getValorSeguro() {
 		
 		return valorSeguro;
 	}
         
         public void setValorLocacao(){
-            
-            
             
             setValorSeguro();
             valorTotal = getValorLocacao();
@@ -231,17 +214,12 @@ public class LocacaoVeiculo {
                 valorTotal = ((((veiculo.getValorDiaria()+valorSeguro) * dias)) - ((((veiculo.getValorDiaria()+valorSeguro) * dias))*(desconto/100)));
                 
                 
-                
             }
-            
-            
         }
         
         public double getValorLocacao(){
             
-            
             return valorTotal;
-           
         }
 
     @Override
@@ -260,12 +238,4 @@ public class LocacaoVeiculo {
                 "   STATUS: " + status;
                 
     } 
-        
-        
-       
-        
-        
-        
-        
-
 }
