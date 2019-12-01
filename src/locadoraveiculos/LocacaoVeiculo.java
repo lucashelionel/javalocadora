@@ -21,7 +21,7 @@ public class LocacaoVeiculo {
         
         
         
-    public LocacaoVeiculo(){
+    public LocacaoVeiculo(){// construtor vazio
         
     }    
 
