@@ -12,7 +12,7 @@ import locadoraveiculos.LocadoraDados;
 
 /**
  *
- * @author renan
+ * @author lucas h
  */
 public class ListarLocacoes extends javax.swing.JInternalFrame {
     private DefaultTableModel modelo;
