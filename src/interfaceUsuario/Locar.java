@@ -17,7 +17,7 @@ import locadoraveiculos.Veiculo;
 
 /**
  *
- * @author renan
+ * @author lucas h
  */
 public class Locar extends javax.swing.JInternalFrame {
     
