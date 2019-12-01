@@ -36,7 +36,7 @@ public class LocacaoVeiculo {
         setDataFin(dataFin);
         setPossuiSeguro(possuiSeguro);
         
-        setValorLocacao();      //Setando o valor da locação
+        setValorLocacao();      //configurando o valor da locação
      }
 
         public String getStatus() {
